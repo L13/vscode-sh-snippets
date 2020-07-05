@@ -1,0 +1,46 @@
+{
+    "name": "l13-sh-snippets",
+    "displayName": "Shell Script Snippets",
+    "description": "Code Snippets for Shell Script",
+    "version": "0.13.0",
+    "publisher": "L13RARY",
+	"preview": true,
+    "license": "SEE LICENCE IN LICENCE.md",
+	"homepage": "https://github.com/l13/vscode-sh-snippets/blob/master/README.md",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/l13/vscode-sh-snippets.git"
+	},
+	"bugs": {
+		"url": "https://github.com/l13/vscode-sh-snippets/issues"
+	},
+    "icon": "images/icon.png",
+	"galleryBanner": {
+		"color": "#232323",
+		"theme": "dark"
+	},
+    "engines": {
+        "vscode": "^1.32.0"
+    },
+    "categories": [
+        "Snippets"
+    ],
+	"keywords": [
+		"bash",
+		"script",
+		"shell",
+		"snippets",
+		"zsh"
+	],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "shellscript",
+                "path": "./snippets/shell.json"
+            }
+        ]
+    },
+	"scripts": {
+		"build": "node ./src/index.js"
+    }
+}
