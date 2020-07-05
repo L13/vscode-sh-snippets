@@ -2,7 +2,7 @@
     "name": "l13-sh-snippets",
     "displayName": "Shell Script Snippets",
     "description": "Code Snippets for Shell Script",
-    "version": "0.13.0",
+    "version": "0.13.1",
     "publisher": "L13RARY",
 	"preview": true,
     "license": "SEE LICENCE IN LICENCE.md",
