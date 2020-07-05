@@ -36,7 +36,7 @@ Complete list of all Shell Script Snippets for Visual Studio Code. The rules for
 | `l1` | `local ${1:name}=\${${0:1}};` |
 | `la1` | `local -a ${1:name}=("\${!${0:1}:+\${!${0:1}}}");` |
 | `lA1` | `local -A ${1:name}=("\${!${0:1}:+\${!${0:1}}}");` |
-| `ln1` | `local -i ${1:name}=\${${0:1}};` |
+| `li1` | `local -i ${1:name}=\${${0:1}};` |
 | `lr1` | `local -r ${1:name}="\${${0:1}}";` |
 | `ls1` | `local ${1:name}="\${${0:1}}";` |
 | `$b` | `#!/usr/bin/env bash main () {  set -o errexit; set -o pipefail; set -o nounset;  local -r __dirname="$(cd "$(dirname "\${BASH_SOURCE[0]}")" && pwd)"; local -r __filename="\${__dirname}/$(basename "\${BASH_SOURCE[0]}")";  $0  exit 0;};main "$@";` |

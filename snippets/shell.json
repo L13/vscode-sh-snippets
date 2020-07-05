@@ -43,7 +43,7 @@
 	"local":							{ "prefix": "l1",	"body": ["local ${1:name}=\\${${0:1}};"], "description": "" },
 	"local array":						{ "prefix": "la1",	"body": ["local -a ${1:name}=(\"\\${!${0:1}:+\\${!${0:1}}}\");"], "description": "" },
 	"local map":						{ "prefix": "lA1",	"body": ["local -A ${1:name}=(\"\\${!${0:1}:+\\${!${0:1}}}\");"], "description": "" },
-	"local number":						{ "prefix": "ln1",	"body": ["local -i ${1:name}=\\${${0:1}};"], "description": "" },
+	"local number":						{ "prefix": "li1",	"body": ["local -i ${1:name}=\\${${0:1}};"], "description": "" },
 	"local readonly":					{ "prefix": "lr1",	"body": ["local -r ${1:name}=\"\\${${0:1}}\";"], "description": "" },
 	"local string":						{ "prefix": "ls1",	"body": ["local ${1:name}=\"\\${${0:1}}\";"], "description": "" },
 	
