@@ -2,6 +2,11 @@
 
 This extension contains keyword snippets and micro patterns for shell script.
 
+## What's new in Shell Script Snippets 0.14.0
+
+- Added `break;;`.
+- Added `for ((i=1; i<$0; i++)); do ... done`.
+
 ## Index
 
 1. [Introduction](#Introduction)
