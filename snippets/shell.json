@@ -8,8 +8,8 @@
 	"null":								{ "prefix": "n",	"body": ["null"], "description": "" },
 	"return":							{ "prefix": "r",	"body": ["return"], "description": "" },
 	
-	"break":							{ "prefix": "b",	"body": ["break;;"], "description": "" },
-	"continue":							{ "prefix": "c",	"body": ["continue;;"], "description": "" },
+	"break":							{ "prefix": "b",	"body": ["break$0;"], "description": "" },
+	"continue":							{ "prefix": "c",	"body": ["continue$0;"], "description": "" },
 	"shift":							{ "prefix": "s",	"body": ["shift$0;"], "description": "" },
 	
 	"alias":							{ "prefix": "a1",	"body": ["alias ${1:identifer}='${0:command}';"], "description": "" },
@@ -34,7 +34,7 @@
 	"for (); do; done":					{ "prefix": "fdd",	"body": ["for ((i=1; i<$0; i++)); do", "\t", "done"], "description": "" },
 	
 	"while; do; done":					{ "prefix": "wdd",	"body": ["while $0; do", "\t", "done"], "description": "" },
-	"while read do; done":				{ "prefix": "wrdd",	"body": ["while IFS= read $0; do", "\t", "done"], "description": "" },
+	"while read do; done":				{ "prefix": "wrdd",	"body": ["while IFS=${1:\\$'\n'} read ${0:line}; do", "\t", "done"], "description": "" },
 		
 	"until; do; done":					{ "prefix": "udd",	"body": ["until $0; do", "\t", "done"], "description": "" },
 	
