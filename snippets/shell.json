@@ -8,8 +8,9 @@
 	"null":								{ "prefix": "n",	"body": ["null"], "description": "" },
 	"return":							{ "prefix": "r",	"body": ["return"], "description": "" },
 	
-	"continue":							{ "prefix": "c1",	"body": ["continue;"], "description": "" },
-	"shift":							{ "prefix": "s1",	"body": ["shift$0;"], "description": "" },
+	"break":							{ "prefix": "b",	"body": ["break$0;"], "description": "" },
+	"continue":							{ "prefix": "c",	"body": ["continue$0;"], "description": "" },
+	"shift":							{ "prefix": "s",	"body": ["shift$0;"], "description": "" },
 	
 	"alias":							{ "prefix": "a1",	"body": ["alias ${1:identifer}='${0:command}';"], "description": "" },
 		
@@ -30,6 +31,7 @@
 	"elif; then;":						{ "prefix": "et",	"body": ["elif $0; then"], "description": "" },
 	
 	"for in; do; done":					{ "prefix": "fidd",	"body": ["for $1 in $0; do", "\t", "done"], "description": "" },
+	"for (); do; done":					{ "prefix": "fdd",	"body": ["for ((i=1; i<$0; i++)); do", "\t", "done"], "description": "" },
 	
 	"while; do; done":					{ "prefix": "wdd",	"body": ["while $0; do", "\t", "done"], "description": "" },
 		
