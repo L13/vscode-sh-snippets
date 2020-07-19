@@ -12,8 +12,9 @@ Complete list of all Shell Script Snippets for Visual Studio Code. The rules for
 | `t` | `true` |
 | `n` | `null` |
 | `r` | `return` |
-| `c1` | `continue;` |
-| `s1` | `shift$0;` |
+| `b` | `break$0;` |
+| `c` | `continue$0;` |
+| `s` | `shift$0;` |
 | `a1` | `alias ${1:identifer}='${0:command}';` |
 | `e1` | `echo $0;` |
 | `e1` | `export $0;` |
@@ -28,6 +29,7 @@ Complete list of all Shell Script Snippets for Visual Studio Code. The rules for
 | `itf` | `if $0; then  fi` |
 | `et` | `elif $0; then` |
 | `fidd` | `for $1 in $0; do  done` |
+| `fdd` | `for ((i=1; i<$0; i++)); do  done` |
 | `wdd` | `while $0; do  done` |
 | `udd` | `until $0; do  done` |
 | `cie` | `case $0 in  esac` |
