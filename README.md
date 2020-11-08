@@ -2,10 +2,13 @@
 
 This extension contains keyword snippets and micro patterns for shell script.
 
-## What's new in Shell Script Snippets 0.14.0
+## What's new in Shell Script Snippets 0.15.0
 
-- Added `break;`.
-- Added `for ((i=1; i<$0; i++)); do ... done`.
+- Added `declare -x ...;`.
+- Added `declare -n ...;`.
+- Added boolean to declare and local.
+- Added `else`.
+- Removed `${...}` from `declare ${1:name}=$0;`.
 
 ## Index
 
