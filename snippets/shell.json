@@ -29,6 +29,9 @@
 	
 	"if; then; fi":						{ "prefix": "itf",	"body": ["if $0; then", "\t", "fi"], "description": "" },
 	"elif; then;":						{ "prefix": "et",	"body": ["elif $0; then"], "description": "" },
+
+	"case; )*); esac": { "prefix": "casea", "body": ["case ${1:variable} in\t", "${2:match1})\t", "\t${3:statement1}\t", "\t;;\t", "*)\t", "\t${4:catchall-statement}\t", "\t;;\t", "esac"  ] },
+	"case; )); esac": { "prefix": "casee", "body": [ "case ${1:variable} in\t", "${2:match1})\t", "\t${3:statement1}\t", "\t;;\t", "${4:match2})\t", "\t${5:statement2}\t", "\t;;\t", "esac"  ]  },
 	
 	"for in; do; done":					{ "prefix": "fidd",	"body": ["for $1 in $0; do", "\t", "done"], "description": "" },
 	"for (); do; done":					{ "prefix": "fdd",	"body": ["for ((i=1; i<$0; i++)); do", "\t", "done"], "description": "" },
