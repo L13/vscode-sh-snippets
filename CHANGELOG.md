@@ -1,13 +1,14 @@
 # Change Log
 All notable changes to the "Shell Script Snippets" extension will be documented in this file.
 
-## [0.15.0] - 2020-11-15
+## [0.15.0] - 2020-12-27
 
 ### Added
 - Added `declare -x ...;`.
 - Added `declare -n ...;`.
 - Added boolean to declare and local.
 - Added `else`.
+- Added `);;` and `*);;` for a case.
 
 ## Removed
 - Removed `${...}` from `declare ${1:name}=$0;`.

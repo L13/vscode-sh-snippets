@@ -2,7 +2,7 @@
 
 Complete list of all Shell Script Snippets for Visual Studio Code. The rules for all these snippets are explained in the [README.md](./README.md)
 
-### Shell
+### Shell Script
 
 | Prefix | Snippet |
 | ------:| ------- |
@@ -37,6 +37,8 @@ Complete list of all Shell Script Snippets for Visual Studio Code. The rules for
 | `wdd` | `while $0; do  done` |
 | `udd` | `until $0; do  done` |
 | `cie` | `case $0 in  esac` |
+| `_)` | `$1) $0 ;;` |
+| `_*` | `*) $0 ;;` |
 | `f_` | `function ${1:name} {  $0  }` |
 | `$_` | `${1:name} () {  $0  }` |
 | `l1` | `local ${1:name}=\${${0:1}};` |

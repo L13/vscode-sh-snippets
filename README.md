@@ -8,6 +8,7 @@ This extension contains keyword snippets and micro patterns for shell script.
 - Added `declare -n ...;`.
 - Added boolean to declare and local.
 - Added `else`.
+- Added `);;` and `*);;` for a case.
 - Removed `${...}` from `declare ${1:name}=$0;`.
 
 ## Index
@@ -59,6 +60,13 @@ __The following prefixes are just examples to explain the rules.__ To see the co
 | -------:| ------- |
 | `e1`    | <b>e</b>cho ...; |
 | `s1`    | <b>s</b>hift<i>$0</i>; |
+
+### 5. A case can be defined by the two following prefixes.
+
+| Prefix  | Snippet |
+| -------:| ------- |
+| `_)`    | <b>)</b> ... ;; |
+| `_*`    | <b>*)</b> ... ;; |
 
 ### 6. A "b" or a "z" at the end stands for bash or zsh.
 

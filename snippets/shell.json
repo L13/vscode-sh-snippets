@@ -42,6 +42,8 @@
 	"until; do; done":					{ "prefix": "udd",	"body": ["until $0; do", "\t", "done"], "description": "" },
 	
 	"case in; esac":					{ "prefix": "cie",	"body": ["case $0 in", "\t", "esac"], "description": "" },
+	");;":								{ "prefix": "_)",	"body": ["$1)", "\t$0", "\t;;"], "description": "" },
+	"*);;":								{ "prefix": "_*",	"body": ["*)", "\t$0", "\t;;"], "description": "" },
 	
 	"function {}":						{ "prefix": "f_",	"body": ["function ${1:name} {", "\t", "\t$0", "\t", "}"], "description": "" },
 	"name () {}":						{ "prefix": "$_",	"body": ["${1:name} () {", "\t", "\t$0", "\t", "}"], "description": "" },
