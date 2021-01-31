@@ -6,7 +6,7 @@ const path = require('path');
 //	Variables __________________________________________________________________
 
 const paths = {
-	Shell: '../snippets/shell.json',
+	"Shell Script": '../snippets/shell.json',
 };
 
 const snippets = [`## Shell Script Snippets
