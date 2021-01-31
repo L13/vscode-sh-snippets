@@ -1,7 +1,7 @@
 # Change Log
 All notable changes to the "Shell Script Snippets" extension will be documented in this file.
 
-## [0.15.0] - 2020-12-27
+## [0.15.0] - 2021-01-31
 
 ### Added
 - Added `declare -x ...;`.
