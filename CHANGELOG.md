@@ -1,6 +1,12 @@
 # Change Log
 All notable changes to the "Shell Script Snippets" extension will be documented in this file.
 
+## [0.15.1] - 2021-02-01
+
+### Fixed
+- Fixed missing semicolon.
+- Fixed prefix for declare boolean.
+
 ## [0.15.0] - 2021-01-31
 
 ### Added
