@@ -2,14 +2,9 @@
 
 This extension contains keyword snippets and micro patterns for shell script.
 
-## What's new in Shell Script Snippets 0.15.0
+## What's new in Shell Script Snippets 0.16.0
 
-- Added `declare -x ...;`.
-- Added `declare -n ...;`.
-- Added boolean to declare and local.
-- Added `else`.
-- Added `);;` and `*);;` for a case.
-- Removed `${...}` from `declare ${1:name}=$0;`.
+- Added `l13SHSnippets.useFunctionBlockPadding` to enable or disable empty lines in function block scopes.
 
 ## Index
 

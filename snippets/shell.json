@@ -37,6 +37,8 @@
 	"for in; do; done":					{ "prefix": "fidd",	"body": ["for $1 in $0; do", "\t", "done"], "description": "" },
 	"for (); do; done":					{ "prefix": "fdd",	"body": ["for ((i=1; i<$0; i++)); do", "\t", "done"], "description": "" },
 	
+	"select in; do; done":				{ "prefix": "sidd",	"body": ["select $1 in $0; do", "\t", "done"], "description": "" },
+	
 	"while; do; done":					{ "prefix": "wdd",	"body": ["while $0; do", "\t", "done"], "description": "" },
 		
 	"until; do; done":					{ "prefix": "udd",	"body": ["until $0; do", "\t", "done"], "description": "" },
@@ -45,9 +47,6 @@
 	");;":								{ "prefix": "_)",	"body": ["$1)", "\t$0", "\t;;"], "description": "" },
 	"*);;":								{ "prefix": "_*",	"body": ["*)", "\t$0", "\t;;"], "description": "" },
 	
-	"function {}":						{ "prefix": "f_",	"body": ["function ${1:name} {", "\t", "\t$0", "\t", "}"], "description": "" },
-	"name () {}":						{ "prefix": "$_",	"body": ["${1:name} () {", "\t", "\t$0", "\t", "}"], "description": "" },
-	
 	"local":							{ "prefix": "l1",	"body": ["local ${1:name}=\\${${0:1}};"], "description": "" },
 	"local array":						{ "prefix": "la1",	"body": ["local -a ${1:name}=(\"\\${!${0:1}:+\\${!${0:1}}}\");"], "description": "" },
 	"local map":						{ "prefix": "lA1",	"body": ["local -A ${1:name}=(\"\\${!${0:1}:+\\${!${0:1}}}\");"], "description": "" },
@@ -55,6 +54,27 @@
 	"local number":						{ "prefix": "li1",	"body": ["local -i ${1:name}=\\${${0:1}};"], "description": "" },
 	"local readonly":					{ "prefix": "lr1",	"body": ["local -r ${1:name}=\"\\${${0:1}}\";"], "description": "" },
 	"local string":						{ "prefix": "ls1",	"body": ["local ${1:name}=\"\\${${0:1}}\";"], "description": "" },
+	
+	"test empty string":				{ "prefix": "tz",	"body": ["test -z $0"], "description": "" },
+	"test equal string":				{ "prefix": "t",	"body": ["test $1 = $0"], "description": "" },
+	"test non empty string":			{ "prefix": "tn",	"body": ["test -n $0"], "description": "" },
+	"test non equal string":			{ "prefix": "t",	"body": ["test $1 != $0"], "description": "" },
+	"test equal number":				{ "prefix": "teq",	"body": ["test $1 -eq $0"], "description": "" },
+	"test great equal number":			{ "prefix": "tge",	"body": ["test $1 -ge $0"], "description": "" },
+	"test great than number":			{ "prefix": "tgt",	"body": ["test $1 -gt $0"], "description": "" },
+	"test less equal number":			{ "prefix": "tle",	"body": ["test $1 -le $0"], "description": "" },
+	"test less than number":			{ "prefix": "tlt",	"body": ["test $1 -lt $0"], "description": "" },
+	"test not equal number":			{ "prefix": "tne",	"body": ["test $1 -ne $0"], "description": "" },
+	"test exist":						{ "prefix": "te",	"body": ["test -e $0"], "description": "" },
+	"test exist file":					{ "prefix": "tf",	"body": ["test -f $0"], "description": "" },
+	"test exist directory":				{ "prefix": "td",	"body": ["test -d $0"], "description": "" },
+	"test exist readable":				{ "prefix": "tr",	"body": ["test -r $0"], "description": "" },
+	"test exist writeable":				{ "prefix": "tw",	"body": ["test -w $0"], "description": "" },
+	"test exist executable":			{ "prefix": "tx",	"body": ["test -x $0"], "description": "" },
+	"test exist symbolic link":			{ "prefix": "th",	"body": ["test -h $0"], "description": "" },
+	"test equal file":					{ "prefix": "tef",	"body": ["test $1 -ef $0"], "description": "" },
+	"test new than":					{ "prefix": "tnt",	"body": ["test $1 -nt $0"], "description": "" },
+	"test old than":					{ "prefix": "tot",	"body": ["test $1 -ot $0"], "description": ""  },
 	
 	"bash-scope": {
 		"prefix": "$b",

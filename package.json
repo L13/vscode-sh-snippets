@@ -2,10 +2,9 @@
 	"name": "l13-sh-snippets",
 	"displayName": "Shell Script Snippets",
 	"description": "Code Snippets for Shell Script",
-	"version": "0.15.1",
+	"version": "0.16.0",
 	"publisher": "L13RARY",
-	"preview": true,
-	"license": "SEE LICENCE IN LICENCE.md",
+	"license": "SEE LICENSE IN LICENSE.md",
 	"homepage": "https://github.com/l13/vscode-sh-snippets/blob/master/README.md",
 	"repository": {
 		"type": "git",
@@ -32,15 +31,56 @@
 		"snippets",
 		"zsh"
 	],
+	"activationEvents": [
+		"onLanguage:shellscript"
+	],
+	"extensionKind": [
+		"ui",
+		"workspace"
+	],
+	"capabilities": {
+		"virtualWorkspaces": true
+	},
+	"main": "./out/extension.js",
 	"contributes": {
 		"snippets": [
 			{
 				"language": "shellscript",
 				"path": "./snippets/shell.json"
 			}
-		]
+		],
+		"configuration": {
+			"type": "object",
+			"title": "Shell Script Snippets",
+			"properties": {
+				"l13SHSnippets.useFunctionBlockPadding": {
+					"type": "boolean",
+					"default": true,
+					"description": "Controls if a function block has additional empty lines."
+				}
+			}
+		}
 	},
 	"scripts": {
-		"build": "node ./src/index.js"
+		"docs": "node ./scripts/docs.js",
+		"vscode:prepublish": "npm run compile",
+		"compile": "tsc -p ./",
+		"lint": "eslint . --ext .ts,.tsx",
+		"watch": "tsc -watch -p ./",
+		"update": "rm -rf node_modules && rm package-lock.json && npm install",
+		"check-lint-rules": "node ./plugins/check-lint-rules"
+	},
+	"devDependencies": {
+		"@types/node": "^16.11.7",
+		"@types/vscode": "^1.32.0",
+		"@typescript-eslint/eslint-plugin": "^4.22.1",
+		"@typescript-eslint/eslint-plugin-tslint": "^4.22.1",
+		"@typescript-eslint/parser": "^4.22.1",
+		"del": "^6.0.0",
+		"eslint": "^7.26.0",
+		"eslint-plugin-import": "^2.22.1",
+		"eslint-plugin-jsdoc": "^33.3.0",
+		"eslint-plugin-l13": "file:plugins/eslint-plugin-l13",
+		"typescript": "^4.8.4"
 	}
 }

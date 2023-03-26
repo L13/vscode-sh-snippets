@@ -1,6 +1,11 @@
 # Change Log
 All notable changes to the "Shell Script Snippets" extension will be documented in this file.
 
+## [0.16.0] - 2023-04-02
+
+### Changed
+- Added `l13SHSnippets.useFunctionBlockPadding` to enable or disable empty lines in function block scopes.
+
 ## [0.15.1] - 2021-02-01
 
 ### Fixed
