@@ -53,9 +53,9 @@
 			"type": "object",
 			"title": "Shell Script Snippets",
 			"properties": {
-				"l13SHSnippets.useFunctionBlockPadding": {
+				"l13Snippets.shellScript.useFunctionBlockPadding": {
 					"type": "boolean",
-					"default": true,
+					"default": false,
 					"description": "Controls if a function block has additional empty lines."
 				}
 			}

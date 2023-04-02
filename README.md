@@ -4,7 +4,7 @@ This extension contains keyword snippets and micro patterns for shell script.
 
 ## What's new in Shell Script Snippets 0.16.0
 
-- Added `l13SHSnippets.useFunctionBlockPadding` to enable or disable empty lines in function block scopes.
+- Added `l13Snippets.shellScript.useFunctionBlockPadding` to enable or disable line padding in function blocks.
 
 ## Index
 

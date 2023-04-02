@@ -28,7 +28,7 @@ export function activate (context: vscode.ExtensionContext) {
 	
 	const changeConfiguration = vscode.workspace.onDidChangeConfiguration((event) => {
 		
-		if (event.affectsConfiguration('l13SHSnippets.useFunctionBlockPadding')) {
+		if (event.affectsConfiguration('l13Snippets.shellScript.useFunctionBlockPadding')) {
 			buildAllCompletionItems();
 		}
 		
@@ -42,7 +42,7 @@ export function activate (context: vscode.ExtensionContext) {
 
 function get (key: string, value?: any) {
 	
-	return vscode.workspace.getConfiguration('l13SHSnippets').get(key, value);
+	return vscode.workspace.getConfiguration('l13Snippets.shellScript').get(key, value);
 	
 }
 
