@@ -1,7 +1,7 @@
 # Change Log
 All notable changes to the "Shell Script Snippets" extension will be documented in this file.
 
-## [0.16.0] - 2023-04-02
+## [0.16.0] - 2023-04-09
 
 ### Changed
 - Added `l13Snippets.shellScript.useFunctionBlockPadding` to enable or disable line padding in function blocks.
