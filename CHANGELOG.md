@@ -1,6 +1,11 @@
 # Change Log
 All notable changes to the "Shell Script Snippets" extension will be documented in this file.
 
+## [0.16.1] - 2023-04-16
+
+### Changed
+- Changed README.md for Anti-Virus false positive check.
+
 ## [0.16.0] - 2023-04-09
 
 ### Changed
