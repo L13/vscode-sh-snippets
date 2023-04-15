@@ -67,15 +67,15 @@ __The following prefixes are just examples to explain the rules.__ To see the co
 
 | Prefix  | Snippet |
 | -------:| ------- |
-| `s1b`   | source "$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)/.sh"; |
-| `s1z`   | source "$(cd "$(dirname "${(%):-%x}")" && pwd)/.zsh"; |
+| `s1b`   | <b>s</b>ource "$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)/.sh"; |
+| `s1z`   | <b>s</b>ource "$(cd "$(dirname "${(%):-%x}")" && pwd)/.zsh"; |
 
 ### 7. A default pattern for a script can be initialized with
 
 | Prefix  | Snippet |
 | -------:| ------- |
-| `$b`    | #!/usr/bin/env bash main () { ... exit 0; };main "$@"; |
-| `$z`    | #!/usr/bin/env zsh main () { ... exit 0; };main "$@"; |
+| `$b`    | #!/usr/bin/env <b>b</b>ash main () { ... exit 0; };main "$@"; |
+| `$z`    | #!/usr/bin/env <b>z</b>sh main () { ... exit 0; };main "$@"; |
 
 ## Recommended Settings
 
