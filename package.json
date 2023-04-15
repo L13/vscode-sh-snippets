@@ -2,7 +2,7 @@
 	"name": "l13-sh-snippets",
 	"displayName": "Shell Script Snippets",
 	"description": "Code Snippets for Shell Script",
-	"version": "0.16.0",
+	"version": "0.16.1",
 	"publisher": "L13RARY",
 	"license": "SEE LICENSE IN LICENSE.md",
 	"homepage": "https://github.com/l13/vscode-sh-snippets/blob/master/README.md",
